@@ -9,7 +9,7 @@ from scipy.spatial import cKDTree, Delaunay, delaunay_plot_2d, Voronoi, voronoi_
 import csv
 
 def nn_point(xp, yp, grid_loc, tri, neighbors, triangle_info):
-    r"""Generate a natural neighbor interpolation of the observations to the given point.
+    """Generate a natural neighbor interpolation of the observations to the given point.
 
     This uses the Liang and Hale approach [Liang2010]_. The interpolation will fail if
     the grid point has no natural neighbors.
